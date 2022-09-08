@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["\nimport { Sorter } from \"./Sorter\";\nimport { NumbersCollection } from \"./NumbersCollection\";\nimport { CharactersCollection } from \"./CharactersCollection\";\nimport { LinkedList } from \"./LinkedList\";\n\nconst numbersCollection = new NumbersCollection([1000, 3, -5, 1]);\nnumbersCollection.sort();\n\nconst charactersCollection = new CharactersCollection('YBa');\ncharactersCollection.sort()\n\n\nconst linkedList = new LinkedList();\nlinkedList.add(500);\nlinkedList.add(-10);\nlinkedList.add(-3);\nlinkedList.add(4);\n\nlinkedList.sort();\n\n\nconsole.log(numbersCollection.data)\nconsole.log(charactersCollection.data)\nconsole.log(linkedList.print())"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAEA,+BAAkC;AAClC,kCAAqC;AACrC,wBAA2B;AAE3B,MAAM,oBAAoB,IAAI,2CAAkB,CAAC,KAAM,GAAG,IAAI;AAC9D,kBAAkB;AAElB,MAAM,uBAAuB,IAAI,iDAAqB;AACtD,qBAAqB;AAGrB,MAAM,aAAa,IAAI;AACvB,WAAW,IAAI;AACf,WAAW,IAAI;AACf,WAAW,IAAI;AACf,WAAW,IAAI;AAEf,WAAW;AAGX,QAAQ,IAAI,kBAAkB;AAC9B,QAAQ,IAAI,qBAAqB;AACjC,QAAQ,IAAI,WAAW;",
+  "names": []
+}

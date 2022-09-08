@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../Sorter.ts"],
+  "sourcesContent": ["\n\nexport abstract class Sorter {\n\n  abstract length: number;\n  abstract compare(leftIndex: number, rightIndex: number): boolean;\n  abstract swap(leftIndex: number, rightIndex: number): void;\n  \n\n  sort(): void {\n    const { length } = this;\n\n    for(let i = 0; i < length; i++){\n      for(let j = 0; j < length - i -1; j++){\n        if(this.compare(j, j + 1)){\n          this.swap(j, j + 1);\n        }\n      }\n    }\n  }\n  \n}"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAEO,aAAsB;AAAA,EAO3B,OAAa;AACX,UAAM,EAAE,WAAW;AAEnB,aAAQ,IAAI,GAAG,IAAI,QAAQ,KAAI;AAC7B,eAAQ,IAAI,GAAG,IAAI,SAAS,IAAG,GAAG,KAAI;AACpC,YAAG,KAAK,QAAQ,GAAG,IAAI,IAAG;AACxB,eAAK,KAAK,GAAG,IAAI;AAAA;AAAA;AAAA;AAAA;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../NumbersCollection.ts"],
+  "sourcesContent": ["import { Sorter } from \"./Sorter\";\n\nexport class NumbersCollection extends Sorter {\n\n  constructor(public data: number[]){\n    super()\n  }\n\n  get length(): number {\n    return this.data.length;\n  }\n\n  compare(leftIndex: number, rightIndex: number): boolean {\n    return this.data[leftIndex] > this.data[rightIndex];\n  }\n\n  swap(leftIndex: number, rightIndex: number): void {\n    const leftHand = this.data[leftIndex];\n    this.data[leftIndex] = this.data[rightIndex];\n    this.data[rightIndex] = leftHand;\n  }\n  \n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,oBAAuB;AAEhB,gCAAgC,qBAAO;AAAA,EAE5C,YAAmB,MAAe;AAChC;AADiB;AAAA;AAAA,MAIf,SAAiB;AACnB,WAAO,KAAK,KAAK;AAAA;AAAA,EAGnB,QAAQ,WAAmB,YAA6B;AACtD,WAAO,KAAK,KAAK,aAAa,KAAK,KAAK;AAAA;AAAA,EAG1C,KAAK,WAAmB,YAA0B;AAChD,UAAM,WAAW,KAAK,KAAK;AAC3B,SAAK,KAAK,aAAa,KAAK,KAAK;AACjC,SAAK,KAAK,cAAc;AAAA;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../CharactersCollection.ts"],
+  "sourcesContent": ["import { Sorter } from \"./Sorter\";\n\nexport class CharactersCollection extends Sorter{\n\n  constructor(public data: string){\n    super();\n  }\n\n  get length(): number {\n    return this.data.length;\n  }\n\n  compare(leftIndex: number, rightIndex: number): boolean {\n    return (\n      this.data[leftIndex].toLowerCase() > this.data[rightIndex].toLowerCase()\n    );\n  }\n\n  swap(leftIndex: number, rightIndex: number): void {\n    const characters = this.data.split('');\n    \n    const leftHand = characters[leftIndex];\n    characters[leftIndex] = characters[rightIndex];\n    characters[rightIndex] = leftHand;\n    \n    this.data = characters.join('')\n  }\n  \n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,oBAAuB;AAEhB,mCAAmC,qBAAM;AAAA,EAE9C,YAAmB,MAAa;AAC9B;AADiB;AAAA;AAAA,MAIf,SAAiB;AACnB,WAAO,KAAK,KAAK;AAAA;AAAA,EAGnB,QAAQ,WAAmB,YAA6B;AACtD,WACE,KAAK,KAAK,WAAW,gBAAgB,KAAK,KAAK,YAAY;AAAA;AAAA,EAI/D,KAAK,WAAmB,YAA0B;AAChD,UAAM,aAAa,KAAK,KAAK,MAAM;AAEnC,UAAM,WAAW,WAAW;AAC5B,eAAW,aAAa,WAAW;AACnC,eAAW,cAAc;AAEzB,SAAK,OAAO,WAAW,KAAK;AAAA;AAAA;",
+  "names": []
+}
